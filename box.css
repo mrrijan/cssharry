@@ -1,0 +1,29 @@
+.padding {
+         color : red;
+         border : 3px solid black;
+         padding : 20px;
+         padding-bottom: 48px;
+         margin : 23px;
+         width : 555px;
+         border-radius: 34px;
+         box-sizing: border-box;
+}
+  /* .padding{
+          padding-top: ;
+          padding-right: ;
+          padding-bottom: ;
+          padding-left: ;
+          or we can also use 
+          padding : 20px 22px 25px 67px; padding : top right bottom left
+          same thing can also be used for margin for ex : 
+          margin-top :
+          margin-right: 
+          margin-bottom :
+          margin-left: 
+
+
+  } */
+
+
+  /*another note is if we change the paddding and margin the width of the element also decreases/
+  increases as the padding and margin adds onto the width to prevent this we can use box-sizing:border-box;*/
