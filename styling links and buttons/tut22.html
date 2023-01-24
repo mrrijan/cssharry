@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>pseudo selector and styling button</title>
+    <style>
+      .container{
+            border : 3px solid red;
+            width : 900px;
+            background-color: bisque;
+            padding : 34px;
+            margin:34px auto;
+         }
+         a{
+             text-decoration: none;
+             color: black;
+         }
+         a:hover{
+                background-color: blue;
+
+         }
+         a:visited{
+            background-color: brown;
+         }
+         a:active{
+           background-color: green;
+
+         }
+        .btn{
+          border :none;
+          background-color: rgb(241, 209, 167);
+          padding : 5px;
+          cursor: pointer;
+          border-radius: 5px;
+          font-size: 13px;
+          
+        }
+        .btn:hover{
+             background-color: aqua;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium delectus id necessitatibus? Asperiores a quaerat totam repudiandae saepe vero autem laborum. Rem suscipit, pariatur laudantium accusamus asperiores iusto dolores? Autem magni omnis consectetur modi.</p>
+        <a href="https://youtube.com" target="_blank"class="btn">read more</a>
+        <button class="btn">submit</button>
+    </div>
+</body>
+</html>
