@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>position property in css</title>
+    <style>
+      /* position :static(Default) ,absolute , relative ,fixed ,sticky */
+      .container{
+        border: 2px solid black;
+        height: 3000px;
+       } 
+      .box {
+        border: 2px solid red;
+        width: 150px;
+        height: 150px;
+        margin: 3px;
+        display: inline-block;
+      } 
+       #box3 { 
+        /*relative : relative to its original position */
+        /* absolute : relative to its first parent */
+        /*fixed : fixes a element in  a particular location it will stay there even if we move it used while making "chat this us "*/
+        /*sticky : simply sticks the element in the position we want it to stuck used while creating menus that we want to be stuck when the user is scrolling down */
+        /* position: relative; */
+        /* position: absolute; */
+        /* position :fixed; */
+        position: sticky;
+        top: 3px; 
+       }
+    </style>
+  </head>
+  <body>
+     <div class="container">
+      <div class="box" id="box1">1</div>
+      <div class="box" id="box2">2</div>
+      <div class="box" id="box3">3</div>
+      <div class="box" id="box4">4</div>
+    </div>
+  </body> 
+</html>
