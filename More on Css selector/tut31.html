@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>More on CSS selector</title>
+    <style>
+      h1 {
+        border: 2px solid black;
+        background-color: red;
+        text-align: center;
+        color: white;
+      }
+      /*if p is contained by any li which is contained by div
+       div li p {
+        border: 2px solid black;
+        background-color: green;
+        color: yellow;
+      } */
+      /* div as a parent bhitra directly parne child p lai matra css dincha or p is direct inside div
+       div > p {
+        border: 2px solid black;
+        background-color: green;
+        color: yellow;
+      } */
+      /*It affects those paragraph whose nearest sibling is div or if p is right after div
+       div + p{
+        background-color: green;
+        color: yellow;
+      } */
+    </style>
+  </head>
+  <body>
+    <h1>More on CSS selector</h1>
+    <div class="container">
+      <div class="row">
+        <ul>
+          <li><p>This is a simple paragraph</p></li>
+        </ul>
+        <p>THis is another para</p>
+      </div>
+      <p>This is another paragraph thats inside div</p>
+    </div>
+    <p>This paragraph is outside div</p>
+  </body>
+</html>
