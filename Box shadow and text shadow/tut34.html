@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS box shadow and text shadow</title>
+    <style>
+        .container{
+            display: flex;
+        }
+        .card{
+            background-color: rgb(226, 147, 29);
+            padding:23px 12px;
+            margin: 23px 12px;
+            border: 2px solid red;
+            /*The values of offset should be set positive if u want shadow in the downard side
+            box-shadow: 5px 7px green;/*offset x axis offset y axis color*/
+            /*The values of offset should be set negative if you want shadow in the upward side
+            box-shadow: -5px -7px green;
+            box-shadow: 5px 7px 7px green;/*The third one is blur radius
+            box-shadow: 5px 7px 7px 20px green;The fourth one is spread radius
+            box-shadow : offset x offset y blur radius spread radius color
+            box-shadow: 5px 7px 7px 20px rgba(4,50,90,1);*/
+            box-shadow: inset 5px 22px green;
+            box-shadow: 5px 7px red,10px 22px green;
+        }
+        .card h2{
+            text-shadow: 2px 2px white;
+            text-shadow: 2px 2px 10px white;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card" id="card1">
+        <h2>card1</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed ipsum
+          delectus voluptatum a, dolorem perspiciatis necessitatibus cumque
+          quae. Reiciendis magni vero, maiores vitae architecto non ratione
+          pariatur animi natus porro culpa ducimus illum dignissimos.
+        </p>
+      </div>
+      <div class="card" id="card2">
+        <h2>card2</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+          laborum beatae nihil eveniet perspiciatis laudantium quisquam expedita
+          molestiae optio dolorem? Asperiores corporis temporibus adipisci
+          quidem atque numquam, placeat cum explicabo, dolores libero ad fuga?
+        </p>
+      </div>
+      <div class="card" id="card3">
+        <h2>card3</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium,
+          officia rerum, aperiam asperiores eos consequuntur eum tempora
+          accusantium est illo fuga animi ut reprehenderit harum cupiditate
+          impedit minus facilis quia error, velit distinctio veritatis?
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
