@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout using grid template area</title>
+    <style>
+        .container{
+            display: grid;
+            grid-gap: 1rem;
+            grid-template-areas: 
+            'navbar navbar navbar navbar'
+            'section section aside aside'
+            'footer footer footer footer';
+        }
+        .item{
+            background-color: yellow;
+            border: 3px solid black;
+            padding: 15px 12px;
+        }
+        #navbar{
+            grid-area: navbar;
+        }
+        #section{
+            grid-area: section;
+        }
+        #aside{
+           grid-area: aside;
+        }
+        footer{
+            grid-area: footer;
+        }
+        #aside{
+            display: grid;
+            grid-template-areas:'a b' ;
+            
+        }
+        #a{
+            grid-area: a;
+        }
+        #b{
+            grid-area: b;
+        }
+        .inside{
+            background-color: red;
+            border: 3px solid black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+         <div id="navbar" class="item">
+            Home About us contact us 
+         </div>
+        <div id="section" class="item">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non corporis autem at explicabo recusandae, nihil repudiandae odit deserunt numquam, animi rem libero impedit doloribus optio accusantium natus tempore voluptatem officiis eos ratione?
+        </div>
+        <div id="aside" class="item">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum a ex quibusdam cumque omnis sed, fugit assumenda provident, ratione iusto, officiis quasi placeat incidunt optio aliquid obcaecati qui necessitatibus eum eaque vel.
+        </div>
+    </div>
+    <footer class="item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis labore eum consequatur.</footer>
+    
+        
+</body>
+</html>
